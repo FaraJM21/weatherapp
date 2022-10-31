@@ -1,4 +1,4 @@
-function TopButtons() {
+function TopButtons(props) {
   const cities = [
     {
       id: 1,
@@ -29,7 +29,7 @@ function TopButtons() {
     <div className="flex items-center justify-around my-6 ">
       {cities.map((city) => {
         return (
-          <button className="text-white text-lg font-medium" key={city.id}>
+          <button className="text-white text-lg font-medium" key={city.id} onClick =  {() => props.setQuery({q:city.title})}>
             {city.title}
           </button>
         );
