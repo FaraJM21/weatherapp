@@ -7,7 +7,7 @@ function TopButtons(props) {
 
     {
       id: 2,
-      title: "Syndey",
+      title: "Sydney",
     },
 
     {
